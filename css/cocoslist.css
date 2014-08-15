@@ -1,0 +1,60 @@
+.cocoslist__hide {
+	display: none;
+}
+.cocoslist-elements {
+	height: 19px;
+	width: 123px;
+	overflow: hidden;
+	font-size: 13px;
+	font-family: arial;
+}
+.cocoslist-elements__active {
+	overflow: inherit;
+}
+.cocoslist-elements > .cocoslist-element {
+	height: 17px;
+	line-height: 17px;
+	cursor: pointer;
+	padding-left: 5px;
+	z-index: 9999;
+	position: relative;
+}
+.cocoslist-elements > .cocoslist-element:first-child {
+	border: 1px solid #B6B6B6;
+	border-radius: 2px;
+}
+.cocoslist-elements > .cocoslist-element:nth-child(2) {
+	border-top: 1px solid #B6B6B6;
+	margin-top: 1px;
+}
+.cocoslist-elements > .cocoslist-element:hover:not([disabled]) {
+	background: #D3D3D3;
+}
+.cocoslist-elements.cocoslist-elements__active > .cocoslist-element[disabled] {
+	color: #727272;
+	cursor: default;
+}
+.cocoslist-elements__active > .cocoslist-element {
+	background: #F7F7F7;
+	border-left: 1px solid #B6B6B6;
+	border-right: 1px solid #B6B6B6;
+}
+.cocoslist-elements__active > .cocoslist-element:after {
+	content: "";
+	display: block;
+	box-shadow: 5px 1px 6px #B6B6B6;
+}
+.cocoslist-elements__active > .cocoslist-element:last-child {
+	border-bottom: 1px solid #B6B6B6;
+}
+
+
+/*
+.cocoslist-elements__active > .cocoslist-element:first-child {
+	border-top: 1px solid #474747;
+}
+
+.cocoslist-elements:not(.cocoslist-elements__active) > .cocoslist-element:first-child {
+	border: 1px solid #B6B6B6;
+	border-radius: 2px;
+} */
