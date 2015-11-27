@@ -21,13 +21,25 @@
 		    	<option value="Крыса Лариса">Крыса Лариса</option>
 		    	<option value="Крыса Лариса">Крыса Лариса</option>
 		   	</select>
+
+		   	<select id="cocoslist" name="hero[]">
+		    	<option disabled>Выберите героя</option>
+		    	<option value="Чебурашка">Чебурашка 1</option>
+		    	<option value="Крыса Лариса">Крыса Лариса 3</option>
+		    	<option selected value="Крокодил Гена">Крокодил Гена 1</option>
+		    	<option value="Шапокляк">Шапокляк 1</option>
+		    	<option value="Крыса Лариса">Крыса Лариса 1</option>
+		    	<option value="Крыса Лариса">Крыса Лариса 2</option>
+		   	</select>
 		  	<button>Отправить</button>
 		</form>
 	</div>
 
 	<script type="text/javascript">
 		window.addEventListener("load", function() {
-    		CocosList({element: document.getElementById("cocoslist")});
+			[].forEach.call(document.querySelectorAll('select'), function(select, index) {
+				CocosList({element: select});
+			});
 		});
 	</script>
 

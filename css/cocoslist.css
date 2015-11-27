@@ -16,7 +16,7 @@
 	line-height: 17px;
 	cursor: pointer;
 	padding-left: 5px;
-	z-index: 9999;
+	z-index: 10;
 	position: relative;
 }
 .cocoslist-elements > .cocoslist-element:first-child {
@@ -36,6 +36,7 @@
 }
 .cocoslist-elements__active > .cocoslist-element {
 	background: #F7F7F7;
+	z-index: 11;
 	border-left: 1px solid #B6B6B6;
 	border-right: 1px solid #B6B6B6;
 }
